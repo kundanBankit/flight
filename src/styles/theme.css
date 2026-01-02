@@ -1,0 +1,259 @@
+/* src/styles/theme.css */
+:root {
+  --brand: #1C3C5F;
+  --brand-accent: #0BABE4;
+  --brand-primary: #0BABE4;
+  --brand-dark: #1C3C5F;
+  --brand-light: #ffffff;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+/* Solid brand button */
+.btn-brand {
+  background-color: var(--brand-dark); /* filled by default */
+  color: #fff;
+  border: 1px solid var(--brand-dark);
+  border-radius: 0.75rem;
+  /* padding: 0.75rem 1.25rem; */
+  font-weight: 600;
+}
+
+.btn-brand:hover {
+  background-color: var(--brand-accent);
+  border-color: var(--brand-accent);
+  color: #fff;
+}
+
+/* Outline brand button */
+.btn-outline-brand {
+  background-color: transparent;
+  color: var(--brand-dark);
+  border: 1px solid var(--brand-dark);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+}
+
+.btn-outline-brand:hover {
+  background-color: var(--brand-dark);
+  color: #fff;
+}
+
+/* Active state */
+.btn-active {
+  background-color: var(--brand-dark) !important;
+  color: #fff !important;
+  border-color: var(--brand-dark) !important;
+}
+
+/* =========================
+   COLORS + HELPERS
+   ========================= */
+.text-brand {
+  color: var(--brand-primary) !important;
+}
+
+.bg-brand {
+  background-color: var(--brand-primary) !important;
+  color: #fff;
+}
+
+.bg-dark-brand {
+  background-color: var(--brand-dark) !important;
+  color: #fff;
+}
+
+/* =========================
+   RESPONSIVE TYPOGRAPHY
+   ========================= */
+h1, h2, h3 {
+  line-height: 1.2;
+  color: #1c3c5f !important;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+
+/* Filled Primary Button (default) */
+.btn-brand {
+  background-color: #1c3c5f !important;
+  color: #ffffff !important;
+  border: 1px solid #1c3c5f !important;
+  transition: all 0.3s ease;
+}
+
+.btn-brand:hover {
+  background-color: #0e2030 !important;
+  color: #ffffff !important;
+  border-color: #0e2030 !important;
+  position: relative;
+  z-index: 10; /* bring forward */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* optional glow effect */
+}
+
+/* Outline Button */
+.btn-outline-brand {
+  background-color: transparent !important;
+  color: #1c3c5f !important;
+  border: 1px solid #1c3c5f !important;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-brand:hover {
+  background-color: #1c3c5f !important;
+  color: #ffffff !important;
+}
+
+.custom-title {
+  text-align: center;       /* text-center */
+  font-weight: bold;        /* fw-bold */
+  margin-bottom: 1rem;      /* mb-3 */
+  font-size: 2rem;          /* fs-2 */
+  text-transform: uppercase; /* text-uppercase */
+  color: #1C3C5F;           /* inline color */
+}
+
+
+.custom-submit-button {
+  padding-left: 1.5rem !important;   /* px-4 (left-right padding = 1.5rem) */
+  padding-right: 1.5rem !important;
+  font-weight: 600 !important;       /* fw-semibold */
+}
+
+.custom-clear-button {
+  padding-left: 1.5rem !important;   /* px-4 (left-right padding = 1.5rem) */
+  padding-right: 1.5rem !important;
+  font-weight: 600 !important;       /* fw-semibold */
+  background-color: gray !important;
+  border-color: gray !important;
+}
+
+.custom-clear-button:hover {
+  padding-left: 1.5rem !important;   /* px-4 (left-right padding = 1.5rem) */
+  padding-right: 1.5rem !important;
+  font-weight: 600 !important;       /* fw-semibold */
+  background-color: rgb(79, 79, 79) !important;
+  border-color: rgb(79, 79, 79) !important;
+}
+
+
+.pnr-input {
+  width: 200px;
+  text-align: center;
+  font-size: 1.25rem; /* same as fs-5 */
+}
+
+.pnr-input::placeholder {
+  font-size: 0.85rem; /* smaller placeholder text */
+  color: #6c757d; /* optional muted color */
+}
+
+
+.custom-checkbox input[type="checkbox"]:checked {
+  background-color: #233B5E;
+  border-color: #233B5E;
+}
+.custom-checkbox input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 0.2rem rgba(35, 59, 94, 0.25);
+  border-color: #233B5E;
+}
+
+
+
+/* Booking Ticket - search form */
+
+.custom-date-btn {
+  background-color: transparent;
+  border: 1px solid #233B5E;
+  color: #233B5E;
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+.custom-date-btn:hover {
+  background-color: #c9c7c7;
+  border: 1px solid #c9c7c7;
+  color: #233B5E;
+}
+
+/* Selected (active) button */
+.custom-date-btn.selected {
+  background-color: #233B5E;
+  color: white;
+  border-color: #233B5E;
+}
+
+.custom-date-btn.selected:hover {
+  background-color: #233B5E;
+  color: white;
+}
+
+
+/* Dropdown styles - Quota serach form */
+
+.dropdown-toggle {
+  background-color: #233B5E !important;
+  border-color: #233B5E !important;
+  color: white !important;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+  background-color: #1a2f4a !important; /* halka dark shade hover ke liye */
+  border-color: #1a2f4a !important;
+}
+
+
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+  background-color: #233B5E !important;  /* tumhara custom color */
+  color: white !important;
+}
+
+
+
+------------
+
+.btn-brand {
+  background-color: #007aff;
+  color: white;
+}
+
+.btn-brand:hover {
+  background-color: #005ecb;
+}
+
+.btn-outline-brand {
+  border: 1px solid #007aff;
+  color: #007aff;
+  background-color: white;
+}
+
+.btn-outline-brand:hover {
+  background-color: #007aff;
+  color: white;
+}
+
+body {
+  padding-top: 80px; /* Adjust based on header height */
+}
