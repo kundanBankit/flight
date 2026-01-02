@@ -1,8 +1,4 @@
-Sure 👍
-Below is a **clean, professional, and recruiter-friendly README** you can directly copy for your **Travel / Flight Booking React project**.
-I’ve written it to match **what you’ve actually built** (search → review → travellers → seats → meals).
 
----
 
 # ✈️ Travel Booking Application (Flight Module)
 
